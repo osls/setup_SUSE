@@ -31,7 +31,7 @@ cd -
 - 运行 `fcitx configuration` 增加中文输入法
 
 3. 其他软件安装设置
-`sudo zypper in emacs gvim fish golang catfish zsh fish gnuplot openssl openssh-client pandoc wine xchm wget gdb git meld curl aspell fortune-mod geany rustc cargo tmux awesome`
+`sudo zypper in emacs gvim fish golang catfish zsh fish gnuplot openssl openssh-client pandoc wine xchm wget gdb git meld curl aspell fortune geany rustc cargo tmux awesome`
 
 ```
 sudo chsh -s /usr/bin/fish mw
