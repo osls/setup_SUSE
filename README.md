@@ -8,8 +8,16 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/f
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 conda config --set show_channel_urls yes
 ```
-- `conda install py-xgboost`
+- installation
+```
+/home/mw/anaconda3/bin/pip install --upgrade pip
 
+/home/mw/anaconda3/bin/pip install msgpack
+/home/mw/anaconda3/bin/conda install py-xgboost  # conda install -c anaconda py-xgboost
+/home/mw/anaconda3/bin/conda install tensorflow  # conda install -c conda-forge tensorflow 
+/home/mw/anaconda3/bin/pip install python-xlib   # import Xlib
+/home/mw/anaconda3/bin/pip install pyautogui
+```
 - startup script
 ```
 mkdir -p ~/.ipython/profile_default/startup
