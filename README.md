@@ -1,8 +1,8 @@
 # setup_openSUSE
 
 1. Python
-- 从 `https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64/` 下载最新版 `Anaconda` 安装
-- 添加 `TUNA` 的 `Anaconda Python` 免费仓库镜像
+- 从 `https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64/` 下载最新版 `Anaconda` 安装到 `~/anaconda3`
+- 添加 `Anaconda Python` 免费仓库的 `TUNA`镜像
 ```
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
@@ -29,6 +29,7 @@ cd -
 2. 中文环境 
 - `sudo zypper in fcitx kde-l10n-zh_CN  wqy-microhei-fonts wqy-zenhei-fonts`
 - 运行 `fcitx configuration` 增加中文输入法
+- 英文字体使用 `Hack`
 
 3. 其他软件安装设置
 `sudo zypper in emacs gvim fish golang catfish zsh fish gnuplot openssl openssh-client pandoc wine xchm wget gdb git meld curl aspell fortune geany rustc cargo tmux awesome`
@@ -36,7 +37,7 @@ cd -
 ```
 sudo chsh -s /usr/bin/fish mw
 
-wget https://raw.githubusercontent.com/osls/TT/master/TT.xmodmap -O .Xmodmap
+cd ~; wget https://raw.githubusercontent.com/osls/TT/master/TT.xmodmap -O .Xmodmap
 
 git config --global push.default simple
 git config --global user.name BjmWang
@@ -51,14 +52,15 @@ wget https://raw.githubusercontent.com/osls/setup_ubuntu/master/editor/base16-ia
 wget https://raw.githubusercontent.com/osls/setup_ubuntu/master/editor/base16-ia-black-theme.el
 emacs -nw --batch -l ~/.emacs.d/init.el -f package-refresh-contents
 cp ./base16-*theme.el ~/.emacs.d/elpa/base16-theme*/
-mv ~/.emacs ./
-
+mv ~/.emacs ~/.emacs.d/
+cd -
 
 mkdir -p ~/.vim
 cd ~/.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 mkdir -p ~/.vim/backup
 mkdir -p ~/.vim/tmp
+cd -
 
 mkdir -p ~/workshop
 
