@@ -31,7 +31,7 @@ cd -
 - 运行 `fcitx configuration` 增加中文输入法
 - 英文字体使用 `Hack`
 
-3. 其他软件安装设置
+3. 常用软件安装设置
 `sudo zypper in emacs gvim fish golang catfish zsh fish gnuplot openssl openssh-client pandoc wine xchm wget gdb git meld curl aspell fortune geany rustc cargo tmux awesome`
 
 ```
@@ -66,3 +66,10 @@ mkdir -p ~/workshop
 
 git clone https://github.com/BjmWang/gftd ~/workshop/gftd
 ```
+
+4. 解码器
+```
+https://opensuse-guide.ustclug.org/codecs.php
+http://opensuse-community.org/
+```
+One-Click-Installation
