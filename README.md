@@ -14,6 +14,7 @@ conda config --set show_channel_urls yes
 
 /home/mw/anaconda3/bin/pip install msgpack
 /home/mw/anaconda3/bin/conda install py-xgboost  # conda install -c anaconda py-xgboost
+/home/mw/anaconda3/bin/conda install lightgbm
 /home/mw/anaconda3/bin/conda install tensorflow  # conda install -c conda-forge tensorflow 
 /home/mw/anaconda3/bin/pip install python-xlib   # import Xlib
 /home/mw/anaconda3/bin/pip install pyautogui
