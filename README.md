@@ -30,7 +30,9 @@ cd -
 
 - TA-Lib
 ```
-# Download ta-lib-0.4.0-src.tar.gz (https://sourceforge.net/projects/ta-lib/files/ta-lib/0.4.0/ta-lib-0.4.0-src.tar.gz/download?use_mirror=jaist) Ref: https://github.com/mrjbq7/ta-lib
+wget https://sourceforge.net/projects/ta-lib/files/ta-lib/0.4.0/ta-lib-0.4.0-src.tar.gz
+# Ref: https://github.com/mrjbq7/ta-lib
+tar -xzvf ta-lib-0.4.0-src.tar.gz
 ./configure --prefix=/usr
 make
 sudo make install
