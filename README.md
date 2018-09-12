@@ -10,15 +10,15 @@ conda config --set show_channel_urls yes
 ```
 - installation
 ```
-/home/mw/anaconda3/bin/pip install --upgrade pip
+~/anaconda3/bin/pip install --upgrade pip
 
-/home/mw/anaconda3/bin/pip install msgpack
-/home/mw/anaconda3/bin/conda install py-xgboost  # conda install -c anaconda py-xgboost
-/home/mw/anaconda3/bin/conda install lightgbm
-/home/mw/anaconda3/bin/conda install catboost
-/home/mw/anaconda3/bin/conda install tensorflow  # conda install -c conda-forge tensorflow 
-/home/mw/anaconda3/bin/pip install python-xlib   # import Xlib
-/home/mw/anaconda3/bin/pip install pyautogui
+~/anaconda3/bin/pip install msgpack
+~/anaconda3/bin/conda install py-xgboost  # conda install -c anaconda py-xgboost
+~/anaconda3/bin/conda install lightgbm
+~/anaconda3/bin/conda install catboost
+~/anaconda3/bin/conda install tensorflow  # conda install -c conda-forge tensorflow 
+~/anaconda3/bin/pip install python-xlib   # import Xlib
+~/anaconda3/bin/pip install pyautogui
 ```
 - startup script
 ```
@@ -26,6 +26,25 @@ mkdir -p ~/.ipython/profile_default/startup
 cd ~/.ipython/profile_default/startup
 https://raw.githubusercontent.com/osls/setup_ubuntu/master/lang/10_python3_startup.py
 cd -
+```
+
+- TA-Lib
+```
+# Download ta-lib-0.4.0-src.tar.gz (https://sourceforge.net/projects/ta-lib/files/ta-lib/0.4.0/ta-lib-0.4.0-src.tar.gz/download?use_mirror=jaist) Ref: https://github.com/mrjbq7/ta-lib
+./configure --prefix=/usr
+make
+sudo make install
+
+~/anaconda3/bin/pip install TA-Lib
+# sudo find / -name libta_lib.so.0
+##~/Downloads/ta-lib/src/.libs/libta_lib.so.0
+##/usr/lib/libta_lib.so.0
+
+sudo su
+echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib' >> /etc/profile
+# tail  /etc/profile
+
+# sudo reboot
 ```
 
 2. 中文环境 
