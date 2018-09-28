@@ -23,7 +23,7 @@ conda config --set show_channel_urls yes
 ~/anaconda3/bin/conda install tensorflow  # conda install -c conda-forge tensorflow 
 ~/anaconda3/bin/pip install python-xlib   # import Xlib
 ~/anaconda3/bin/pip install pyautogui
-~/anaconda3/bin/pip install pyemd
+~/anaconda3/bin/pip install EMD-signal
 ```
 - startup script
 ```
