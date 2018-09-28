@@ -1,5 +1,8 @@
 # setup_openSUSE
 
+0. Apps
+```sudo zypper in emacs gvim fish golang catfish zsh fish gnuplot openssl openssh-client pandoc wine xchm wget gdb git meld curl aspell fortune geany rustc cargo tmux awesome at gcc-c++```
+
 1. Python
 - 从 `https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64/` 下载最新版 `Anaconda` 安装到 `~/anaconda3`
 - 添加 `Anaconda Python` 免费仓库的 `TUNA`镜像
@@ -20,6 +23,7 @@ conda config --set show_channel_urls yes
 ~/anaconda3/bin/conda install tensorflow  # conda install -c conda-forge tensorflow 
 ~/anaconda3/bin/pip install python-xlib   # import Xlib
 ~/anaconda3/bin/pip install pyautogui
+~/anaconda3/bin/pip install pyemd
 ```
 - startup script
 ```
@@ -55,8 +59,7 @@ echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib' >> /etc/profile
 - 运行 `fcitx configuration` 增加中文输入法
 - 英文字体使用 `Hack`
 
-3. 常用软件安装设置
-`sudo zypper in emacs gvim fish golang catfish zsh fish gnuplot openssl openssh-client pandoc wine xchm wget gdb git meld curl aspell fortune geany rustc cargo tmux awesome`
+3. 常用软件设置
 
 ```
 sudo chsh -s /usr/bin/fish mw
