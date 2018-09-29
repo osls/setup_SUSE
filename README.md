@@ -1,6 +1,7 @@
-# setup_openSUSE
+# setup_SUSE
 
 0. Apps
+
 ```sudo zypper in emacs gvim fish golang catfish zsh fish gnuplot openssl openssh-client pandoc wine xchm wget gdb git meld curl aspell fortune geany rustc cargo tmux awesome at gcc-c++```
 
 1. Python
@@ -24,6 +25,7 @@ conda config --set show_channel_urls yes
 ~/anaconda3/bin/pip install python-xlib   # import Xlib
 ~/anaconda3/bin/pip install pyautogui
 ~/anaconda3/bin/pip install EMD-signal
+~/anaconda3/bin/pip install pypinyin
 ```
 - startup script
 ```
