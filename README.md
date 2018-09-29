@@ -26,6 +26,7 @@ conda config --set show_channel_urls yes
 ~/anaconda3/bin/pip install pyautogui
 ~/anaconda3/bin/pip install EMD-signal
 ~/anaconda3/bin/pip install pypinyin
+~/anaconda3/bin/pip install pytdx
 ```
 - startup script
 ```
