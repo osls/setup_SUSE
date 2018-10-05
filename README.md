@@ -27,6 +27,10 @@ conda config --set show_channel_urls yes
 ~/anaconda3/bin/pip install EMD-signal
 ~/anaconda3/bin/pip install pypinyin
 ~/anaconda3/bin/pip install pytdx
+
+git clone https://github.com/BjmWang/GBDT-PL
+cd GBDT-PL/python
+~/anaconda3/bin/pip install --user .
 ```
 - startup script
 ```
