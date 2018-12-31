@@ -36,7 +36,7 @@ cd GBDT-PL/python
 ```
 mkdir -p ~/.ipython/profile_default/startup
 cd ~/.ipython/profile_default/startup
-https://raw.githubusercontent.com/osls/setup_ubuntu/master/lang/10_python3_startup.py
+wget https://raw.githubusercontent.com/osls/ipy-rc/master/99_python3_startup.py
 cd -
 ```
 
@@ -67,7 +67,6 @@ echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib' >> /etc/profile
 - 英文字体使用 `Hack`
 
 3. 常用软件设置
-
 ```
 sudo chsh -s /usr/bin/fish mw
 
@@ -77,20 +76,17 @@ git config --global push.default simple
 git config --global user.name BjmWang
 git config --global user.email Benjamin.mj.wang@gmail.com
 
-cd ~/.config/fish/; wget https://raw.githubusercontent.com/osls/setup_ubuntu/master/shell/config.fish; cd -
+mkdir -p ~/.config/fish/; cd ~/.config/fish/; wget https://raw.githubusercontent.com/osls/shell-rc/master/config.fish; cd -
 
-mkdir -p ~/.emacs.d
-cd ~/.emacs.d
-wget https://raw.githubusercontent.com/osls/setup_ubuntu/master/editor/init.el
-wget https://raw.githubusercontent.com/osls/setup_ubuntu/master/editor/base16-ia-white-theme.el
-wget https://raw.githubusercontent.com/osls/setup_ubuntu/master/editor/base16-ia-black-theme.el
+mkdir -p ~/.emacs.d; cd ~/.emacs.d
+wget https://raw.githubusercontent.com/osls/emacs-rc/master/init.el
 emacs -nw --batch -l ~/.emacs.d/init.el -f package-refresh-contents
-cp ./base16-*theme.el ~/.emacs.d/elpa/base16-theme*/
 mv ~/.emacs ~/.emacs.d/
 cd -
 
 mkdir -p ~/.vim
 cd ~/.vim
+wget https://raw.githubusercontent.com/osls/vim-rc/master/vimrc
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 mkdir -p ~/.vim/backup
 mkdir -p ~/.vim/tmp
@@ -98,7 +94,7 @@ cd -
 
 mkdir -p ~/workshop
 
-git clone https://github.com/BjmWang/gftd ~/workshop/gftd
+#git clone https://github.com/BjmWang/gftd ~/workshop/gftd
 ```
 
 4. 解码器
