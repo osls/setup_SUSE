@@ -71,7 +71,7 @@ echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib' >> /etc/profile
 ```
 sudo chsh -s /usr/bin/fish mw
 
-cd ~; wget https://raw.githubusercontent.com/osls/TT/master/TT.xmodmap -O .Xmodmap
+cd ~; wget https://raw.githubusercontent.com/osls/code-layout/master/xmodmap/ansi_code.xmodmap -O .Xmodmap
 
 git config --global push.default simple
 git config --global user.name BjmWang
