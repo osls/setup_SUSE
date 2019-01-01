@@ -105,4 +105,6 @@ http://opensuse-community.org/
 One-Click-Installation
 
 5. awesomeWM
-```mkdir -p ~/.config/awesome; cd ~/.config/awesome; wget https://raw.githubusercontent.com/osls/awesome-rc/master/rc.lua```
+```mkdir -p ~/.config/awesome; cd ~/.config/awesome;
+git clone https://github.com/Elv13/radical ~/.config/awesome/radical
+wget https://raw.githubusercontent.com/osls/awesome-rc/master/rc.lua```
