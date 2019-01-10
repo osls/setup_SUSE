@@ -94,7 +94,7 @@ cd -
 
 mkdir -p ~/workshop
 
-#git clone https://github.com/BjmWang/gftd ~/workshop/gftd
+git clone https://github.com/BjmWang/gftd ~/workshop/gftd
 ```
 
 4. 解码器
