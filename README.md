@@ -7,6 +7,8 @@ wget https://dl.google.com/linux/linux_signing_key.pub
 sudo rpm --import linux_signing_key.pub
 
 sudo zypper in emacs gvim fish golang catfish zsh fish gnuplot openssl openssh-client pandoc wine xchm wget gdb git meld curl aspell fortune geany rustc cargo tmux awesome at gcc-c++
+# double-commander(文件管理) tilis(模拟终端) chrome(网页浏览) emacs(文本编辑) awesome(窗口管理) 
+# amule WPS MPV
 ```
 
 1. Python
