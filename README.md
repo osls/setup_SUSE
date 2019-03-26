@@ -7,7 +7,7 @@ wget https://dl.google.com/linux/linux_signing_key.pub
 sudo rpm --import linux_signing_key.pub
 
 sudo zypper in emacs gvim fish golang catfish zsh fish gnuplot openssl openssh-client pandoc wine xchm wget gdb git meld curl aspell fortune geany rustc cargo tmux awesome at gcc-c++
-# double-commander(文件管理) tilis(模拟终端) chrome(网页浏览) emacs(文本编辑) awesome(窗口管理) 
+# double-commander(文件管理) tilix(模拟终端) chrome(网页浏览) emacs(文本编辑) awesome(窗口管理) 
 # amule WPS MPV
 ```
 
@@ -106,14 +106,15 @@ mkdir -p ~/workshop
 git clone https://github.com/BjmWang/gftd ~/workshop/gftd
 ```
 
-4. 解码器
+4. 一键安装解码器
 ```
+http://opensuse-guide.org/codecs.php
 https://opensuse-guide.ustclug.org/codecs.php
-http://opensuse-community.org/
 ```
-One-Click-Installation
 
 5. awesomeWM
-```mkdir -p ~/.config/awesome; cd ~/.config/awesome;
-git clone https://github.com/Elv13/radical ~/.config/awesome/radical
-wget https://raw.githubusercontent.com/osls/awesome-rc/master/rc.lua```
+```
+git clone https://github.com/osls/awesome-rc
+mkdir -p $XDG_CONFIG_HOME/awesome
+cp ./awesome-rc/awesome-rc.lua $XDG_CONFIG_HOME/awesome/rc.lua
+```
