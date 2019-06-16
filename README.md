@@ -36,6 +36,8 @@ conda config --set show_channel_urls yes
 ~/anaconda3/bin/pip install pytdx
 ~/anaconda3/bin/pip install jupyterthemes
 
+conda install -c conda-forge jupyterlab
+
 jt  -t grade3 -f code
 git clone https://github.com/BjmWang/GBDT-PL
 cd GBDT-PL/python
