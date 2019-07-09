@@ -12,7 +12,7 @@ sudo zypper in emacs gvim fish golang catfish zsh fish gnuplot openssl openssh-c
 ```
 
 1. Python
-- 从 `https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/linux-64/` 下载最新版 `Anaconda` 安装到 `~/anaconda3`
+- 从 `https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/` 下载最新版 `Anaconda` 安装到 `~/anaconda3`
 - 添加 `Anaconda Python` 免费仓库的 `TUNA`镜像
 ```
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
