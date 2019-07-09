@@ -22,6 +22,8 @@ conda config --set show_channel_urls yes
 - installation
 ```
 ~/anaconda3/bin/pip install --upgrade pip
+~/anaconda3/bin/conda activate base  # or just conda deactivate
+~/anaconda3/bin/conda update conda-build
 
 ~/anaconda3/bin/pip install msgpack
 ~/anaconda3/bin/conda install py-xgboost  # conda install -c anaconda py-xgboost
@@ -36,7 +38,7 @@ conda config --set show_channel_urls yes
 ~/anaconda3/bin/pip install pytdx
 ~/anaconda3/bin/pip install jupyterthemes
 
-conda install -c conda-forge jupyterlab
+~/anaconda3/bin/conda install -c conda-forge jupyterlab
 
 jt  -t grade3 -f code
 git clone https://github.com/BjmWang/GBDT-PL
