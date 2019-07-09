@@ -49,7 +49,7 @@ cd GBDT-PL/python
 ```
 mkdir -p ~/.ipython/profile_default/startup
 cd ~/.ipython/profile_default/startup
-wget https://raw.githubusercontent.com/osls/ipy-rc/master/99_python3_startup.py
+wget https://raw.githubusercontent.com/osls/ipy-rc/master/60_python3_startup.py
 cd -
 ```
 
