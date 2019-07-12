@@ -105,6 +105,15 @@ mkdir -p ~/.vim/backup
 mkdir -p ~/.vim/tmp
 cd -
 
+mkdir -p ~/.config/nvim
+cd ~/.config/nvim
+wget https://raw.githubusercontent.com/osls/vim-rc/master/vimrc
+mv vimrc init.vim
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+mkdir -p ~/.config/nvim/backup
+mkdir -p ~/.config/nvim/tmp
+cd -
+
 mkdir -p ~/workshop
 
 git clone https://github.com/BjmWang/gftd ~/workshop/gftd
